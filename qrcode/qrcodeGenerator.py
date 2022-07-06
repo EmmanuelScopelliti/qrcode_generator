@@ -7,7 +7,7 @@ from PIL import Image
 # Barcode Generator
 number = 'your EAN here'
 code = EAN13(number, writer=ImageWriter())
-code.save("barcodeArt1")
+code.save("barcode")
 
 # qrcode generator
 qr = qrcode.QRCode(
@@ -24,4 +24,4 @@ img = qr.make_image(
     back_color="white"
 ).convert('RGB')
 
-img.save("art1.png")
+img.save("qrcode.png")
