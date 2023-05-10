@@ -6,7 +6,7 @@ from PIL import Image
 
 # Barcode Generator
 number = 'SW100001'
-code = EAN13(number, writer=ImageWriter())
+code = Code128(number, writer=ImageWriter())
 code.save("barcode")
 
 # qrcode generator
