@@ -1,3 +1,4 @@
 barcode_generator==0.1rc15
 Pillow==9.5.0
 barcode==1.0.2
+qrcode==7.4.2
