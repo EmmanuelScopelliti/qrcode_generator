@@ -1,11 +1,11 @@
 
 import qrcode
-from barcode import EAN13
+from barcode import Code128
 from barcode.writer import ImageWriter
 from PIL import Image
 
 # Barcode Generator
-number = 'your EAN here'
+number = 'SW100001'
 code = EAN13(number, writer=ImageWriter())
 code.save("barcode")
 
